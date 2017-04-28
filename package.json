@@ -1,0 +1,21 @@
+{
+  "name": "translator-demo",
+  "version": "1.0.0",
+  "description": "trying out diff node translator modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "translate",
+    "fun",
+    "elf",
+    "dothraki"
+  ],
+  "author": "anton cataldi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.1"
+  }
+}
