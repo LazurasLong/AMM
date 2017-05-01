@@ -1,8 +1,13 @@
 const AMM = require('./index')
 
 const testString = 'testing...123 I am a test brother'
-console.log('I am testing the Dothraki module', AMM.Dothraki(testString))
-console.log('I am testing the Valyrian module', AMM.Valyrian(testString))
+AMM.Dothraki(testString)
+.then((translation) => {
+  console.log('I am testing the Dothraki module', translation)
+})
+.catch((err) => console.error(err))
+// console.log('I am testing the Dothraki module', AMM.Dothraki(testString))
+// console.log('I am testing the Valyrian module', AMM.Valyrian(testString))
 // These code snippets use an open-source library. http://unirest.io/nodejs
 // unirest.post("https://elvish.p.mashape.com/quenya.json?text=I+am+Arwen+-+I've+come+to+help+you.+Hear+my+voice...+Come+back+to+the+light.")
 // .header("X-Mashape-Key", "o1eZbSEX8jmshsmmEDH7ZMkRLoO9p1Rbl0ljsnCRGCzfBbcqJj")
